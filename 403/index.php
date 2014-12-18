@@ -1,4 +1,4 @@
 <?php
 
-echo "403 | Unsupported Content";
+echo "403 | Page Not Supported";
 
