@@ -1,10 +1,131 @@
-/*
-To change this license header, choose License Headers in Project Properties.
-To change this template file, choose Tools | Templates
-and open the template in the editor.
-*/
-/* 
-    Created on : Dec 17, 2014, 9:03:09 PM
-    Author     : peg
-*/
 
+/*DEFAULT*/
+html{
+    background: rgb(22,22,22);
+    height: 100%;
+    width:100%;
+    position: relative;
+}
+
+
+/* This page is a tiny app style for clickthrough naviagtion  */
+
+body {
+
+    height: 100%;
+    width:100%;
+    margin: 0px;
+    position: relative;
+    font-family: Helvetica Neue, Helvetica, sans-serif;
+    font-size: 13px;
+    color: rgb(255,255,255);
+    line-height: 16px;
+    text-align: center;
+    -webkit-font-smoothing: antialiased;
+}
+
+a {
+    box-sizing: border-box;
+    overflow: hidden;
+    height: 100%;
+    width:100%;
+    position: relative;
+    text-decoration: none;
+    display: inline-block;
+    color: rgb(255,255,255);
+    padding-top: 50px;
+}
+
+a:active {
+    background: rgb(255,255,255);
+    opacity: 0.8;
+    /*color: #1badf8;*/
+}
+
+
+
+nav{
+    height: 100%;
+    width: 100%;
+}
+
+header{
+    background:transparent;
+    box-sizing: border-box;
+    cursor: pointer;
+    height:100%;
+    width:100%;
+    padding-top: 50px;
+
+
+}
+h1{
+
+    font-size: 0px;
+    background-repeat: no-repeat;
+    background-position: center; 
+    background-color: transparent;
+    background-size: 120px 120px;
+    background-image: url("http://fivethreeinc.com/mountdoom/dev/img/53.png");
+    width: 120px;
+    height: 120px;
+    margin-top: 0px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 45px;
+
+}
+@media (min-width: 300px) and (min-height:300px){
+    header{
+        background:white;
+        box-sizing: border-box;
+        cursor: pointer;
+        height:auto;
+        width:100%;
+        padding-top: 0px;
+        padding-bottom: 4px;
+
+
+    }
+    header h1{
+
+        font-size: 0px;
+        background-repeat: no-repeat;
+        background-position: center; 
+        background-color: rgb(0,0,0);
+        background-size: 36px;
+        background-image: url("http://fivethreeinc.com/mountdoom/dev/img/53small.png");
+
+        border-bottom: 0px;
+
+        width: 100%;
+        height: 50px;
+
+        margin-top: 0px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 0px;
+
+    }
+
+    header nav{
+        background: black;
+        border-top: 1px solid rgb(180,180,180);
+        height:47px; 
+        width: 100%;
+        overflow-y: hidden;
+        overflow-x: auto;
+        -webkit-overflow-scrolling: auto;
+
+
+    }
+    header nav::-webkit-scrollbar {
+        width: 12px;
+    }
+    header nav ul{background: transparent;height: 47px; width: 550px;margin: 0px auto;padding: 0px;padding-top: 0px;}
+    header nav ul li{background:transparent;display: inline-block;float:left; width: 106px;margin: 0px;list-style: none;padding: 0px;text-align: center;}
+    header nav ul li a{font-family: 'Helvetica Neue', sans-serif;color:whitesmoke;display:inline-block;font-size: 16px;font-weight: 400;letter-spacing: 1px;padding: 14px 0px 16px;text-decoration: none;text-transform: uppercase;opacity: 0.5;}
+    header nav ul li a:hover{color:rgb(255,255,255);opacity: 1.0;}
+    header nav ul li a.active{color:black;}
+
+}
