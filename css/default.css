@@ -1,5 +1,7 @@
 
 /*DEFAULT*/
+/* This page is a tiny app style for clickthrough naviagtion  */
+
 html{
     background: rgb(22,22,22);
     height: 100%;
@@ -7,11 +9,7 @@ html{
     position: relative;
 }
 
-
-/* This page is a tiny app style for clickthrough naviagtion  */
-
 body {
-
     height: 100%;
     width:100%;
     margin: 0px;
@@ -24,58 +22,100 @@ body {
     -webkit-font-smoothing: antialiased;
 }
 
-a {
-    box-sizing: border-box;
-    overflow: hidden;
-    height: 100%;
-    width:100%;
-    position: relative;
-    text-decoration: none;
-    display: inline-block;
-    color: rgb(255,255,255);
-    padding-top: 50px;
-}
 
-a:active {
-    background: rgb(255,255,255);
-    opacity: 0.8;
-    /*color: #1badf8;*/
-}
-
-
-
-nav{
-    height: 100%;
-    width: 100%;
-}
-
+/*HEADER*/
+/*MAIN MINI*/
 header{
     background:transparent;
     box-sizing: border-box;
-    cursor: pointer;
-    height:100%;
+    height:auto;
     width:100%;
     padding-top: 50px;
-
-
 }
-h1{
+
+header h1{
 
     font-size: 0px;
     background-repeat: no-repeat;
     background-position: center; 
     background-color: transparent;
-    background-size: 120px 120px;
-    background-image: url("http://fivethreeinc.com/mountdoom/dev/img/53.png");
-    width: 120px;
-    height: 120px;
+    background-size: 60px;
+    background-image: url("http://fivethreeinc.com/mountdoom/dev/img/53small.png");
+    width: 60px;
+    height: 60px;
     margin-top: 0px;
     margin-left: auto;
     margin-right: auto;
-    margin-bottom: 45px;
+    margin-bottom: 23px;
 
 }
-@media (min-width: 300px) and (min-height:300px){
+
+header h1 a{
+    display: block;
+    height: 100%;
+    width: 100%;
+}
+
+
+/*SITE NAVIGATION*/
+header nav{
+    background: transparent;
+    height: auto;
+    width: 100%;
+}
+
+header nav ul{
+    height: auto;
+    width: 100%;
+    padding: 0px;
+}
+
+header nav ul li{
+    list-style: none;
+    height: auto;
+    width: auto;
+    padding: 3px 0px;
+}
+
+
+header nav ul li a{
+    color:rgba(255,255,255,0.8);
+    display: block;
+    background: rgba(255,255,255,0.1);
+    border-radius: 8px;
+    box-sizing: border-box;
+    overflow: hidden;
+
+    height: 37px;
+    width: 134px;
+
+    font-family: Helvetica Neue, Helvetica, sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    margin: 0px auto;
+    padding: 9px 0px 0px;
+
+}
+header nav ul li a:hover{
+     color:rgba(255,255,255,1.0);
+     background: rgba(255,255,255,0.2);
+}
+header nav ul li a:active{
+     opacity: 0.6;
+}
+
+/*FOOTER*/
+footer {width:134px; height: 90px; position: relative;margin:0px auto;padding: 30px 0px;}
+footer a{background-color: rgba(255,255,255,0.1); border: 0px ;border-radius: 8px;display: inline-block;font-size: 0px;height: 30px; width: 30px; margin: 0px 6px 10px; float: left;}
+footer a.facebook{background-image: url('/img/fivethree.png');background-position: 0px -78px;  background-size: 117px 245px;}
+footer a.twitter{background-image: url('/img/fivethree.png');background-position:-29px -77px;  background-size: 117px 245px;}
+footer a.google{background-image: url('/img/fivethree.png');background-position: -60px -77px; background-size: 117px 245px;}
+footer a:hover{background-color: rgba(255,255,255,0.8);cursor: pointer;}
+footer span{display: block;height: 90px;text-align: center; font-family: 'helvetica-neue', sans-serif; font-size: 10px; letter-spacing: 0px;line-height: 14px; font-weight: 300;padding: 0px 5px;}
+
+/*@media (min-width: 300px) and (min-height:300px){
     header{
         background:white;
         box-sizing: border-box;
@@ -119,13 +159,15 @@ h1{
 
 
     }
+    
     header nav::-webkit-scrollbar {
         width: 12px;
     }
+    
     header nav ul{background: transparent;height: 47px; width: 550px;margin: 0px auto;padding: 0px;padding-top: 0px;}
     header nav ul li{background:transparent;display: inline-block;float:left; width: 106px;margin: 0px;list-style: none;padding: 0px;text-align: center;}
     header nav ul li a{font-family: 'Helvetica Neue', sans-serif;color:whitesmoke;display:inline-block;font-size: 16px;font-weight: 400;letter-spacing: 1px;padding: 14px 0px 16px;text-decoration: none;text-transform: uppercase;opacity: 0.5;}
     header nav ul li a:hover{color:rgb(255,255,255);opacity: 1.0;}
     header nav ul li a.active{color:black;}
 
-}
+}*/
