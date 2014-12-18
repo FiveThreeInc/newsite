@@ -21,15 +21,7 @@
 
         </script>
         <style type="text/css">
-            /*FOOTER*/
-/*            footer {width:122px; height: 90px; position: relative;margin:0px auto;padding: 30px 0px;}
-            footer a{background: transparent; border: 1px solid rgba(170,170,170,1.0);border-radius: 4px;display: inline-block;font-size: 0px;height: 30px; width: 30px; margin: 0px 4px 10px; float: left;}
-            footer a.facebook{background: url('/img/fivethree.png') 0px -78px;  background-size: 117px 245px;}
-            footer a.twitter{background: url('/img/fivethree.png') -29px -77px;  background-size: 117px 245px;}
-            footer a.google{background: url('/img/fivethree.png') -60px -77px;  background-size: 117px 245px;}
-            footer a:hover{background-color: rgb(211,211,211);border: 1px solid rgba(170,170,170,1.0);cursor: pointer;}
-            footer span{display: block;height: 90px;text-align: center; font-family: 'helvetica-neue', sans-serif; font-size: 10px; letter-spacing: 0px; font-weight: 300;padding: 0px 5px;}*/
-
+           
         </style>
     </head>
     <body>
