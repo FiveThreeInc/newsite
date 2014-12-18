@@ -30,11 +30,11 @@
             <nav>
                 <ul>
                     <li><a href="/news">news</a></li>
-                    <li><a href="">team</a></li>
-                    <li><a href="">work</a></li>
-                    <li><a href="">products</a></li>
-                    <li><a href="">games</a></li>
-                    <li><a href="">contact</a></li>
+                    <li><a href="/team">team</a></li>
+                    <li><a href="/work">work</a></li>
+                    <li><a href="/products">products</a></li>
+                    <li><a href="/games">games</a></li>
+                    <li><a href="/contact">contact</a></li>
                 </ul>
             </nav>
         </header>
