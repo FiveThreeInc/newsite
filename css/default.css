@@ -50,6 +50,19 @@ header h1{
 
 }
 
+header h1 a{
+    box-sizing: border-box;
+    overflow: hidden;
+    color:orange;
+    text-align: left;
+    text-decoration: none;
+    display: block;
+    height: 100%;
+    width: 100%;
+    padding: 12px 0px 12px 10px;
+}
+
+/*SUB HEADER FOR MINI DESIGN*/
 header.minilink{
     background:transparent;
     box-sizing: border-box;
@@ -76,17 +89,6 @@ header h1.minilink{
 
 }
 
-header h1 a{
-    box-sizing: border-box;
-    overflow: hidden;
-    color:orange;
-    text-align: left;
-    text-decoration: none;
-    display: block;
-    height: 100%;
-    width: 100%;
-    padding: 12px 0px 12px 10px;
-}
 
 
 /*SITE NAVIGATION*/
