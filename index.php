@@ -1,7 +1,4 @@
 <?php
 
-echo "Hello Buddy!";
-echo "Hello Buddy!";
-
-echo "Testing!";
+echo "basic goals : 1) Inform Visitors 2) Navigate Users";
     
