@@ -8,6 +8,9 @@
         <meta name="viewport" content=" width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
         <meta content="text/html;charset=utf-8" http-equiv="Content-Type">
 
+        <!--IMPORT CX SITE ICONS-->
+        <?php require_once('../siteobjects/icons.php'); ?>
+
         <!--Google Schemas-->
 
         <!--Google Resources-->
@@ -21,7 +24,7 @@
 
         </script>
         <style type="text/css">
-           
+
         </style>
     </head>
     <body>

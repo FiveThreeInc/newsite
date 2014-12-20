@@ -11,14 +11,13 @@
 <!--APPLE STARTUP IMAGE-->
 <link rel="apple-touch-startup-image" href="/img/icons/startup.png">
 
-<!--WINDOWS 8 TILE Icons-->
-<meta name="msapplication-TileColor" content="#ffffff">
-<meta name="msapplication-TileImage" content="/img/icons/favicon96.png">
-
 <!--Standard Icon-->
 <link rel="icon" type="image/ico" href="/img/icons/favicon.ico"/>
 
 <!--Other Icon Links-->
 <link rel="icon" sizes="16x16" type="image/x-icon" href="/img/icons/favicon.ico">
-<link rel="icon" sizes="96x96" type="image/png" href="/img/icons/favicon96.png" />
+<link rel="icon" sizes="32x32" type="image/png" href="/img/icons/favicon32.png" />
 
+<!--WINDOWS 8 TILE Icons-->
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="msapplication-TileImage" content="/img/icons/favicon96.png">
