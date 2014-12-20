@@ -2,12 +2,8 @@
 <html>
     <head>
         <title>Five 3 - 404</title>
-        <!--General Schemas-->
-        <meta content="text/html;charset=utf-8" http-equiv="Content-Type">
-        <meta content="Team Five Three: Designing and developing rich web and mobile applications. " name="description">
-        <meta name="viewport" content=" width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
-
-        <!--WE SHOULD MAKE A LARGER OBJECT CALLED BRAINS-->
+         <!--Import General Schemas-->
+        <?php require_once('../siteobjects/mainmeta.php'); ?>
 
         <!--IMPORT CX SITE ICONS-->
         <?php require_once('../siteobjects/icons.php'); ?>
