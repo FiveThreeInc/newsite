@@ -1,53 +1,33 @@
-<!DOCTYPE html>
-<html>
-    <head>
-        <title>Five 3</title>
+<?php
 
-         <!--Import General Schemas-->
-        <?php require_once('./siteobjects/mainmeta.php'); ?>
+$req = (isset($_GET['req']) ? $_GET['req'] : FALSE);
 
-        <!--IMPORT CX SITE ICONS-->
-        <?php require_once('./siteobjects/icons.php'); ?>
+if ($req && file_exists('./pages/' . $req . '.php')) {
+    
+    $html = new DOMDocument();
+    libxml_use_internal_errors(true);
+    $html->loadHTMLFile('./pages/master.php');
 
-        <!--Google Schemas-->
+    $page = new DOMDocument();
+    $page->loadHTMLFile('./pages/' . $req . '.php');
 
-        <!--Google Resources-->
-        <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    $head = $html->getElementsByTagName('head');
+    $pageHead = $page->getElementsByTagName('head');
 
-        <!--Host Resources-->
-        <link rel="stylesheet" type="text/css" href="http://beta.fivethreeinc.com/css/default.css/"/>
+    foreach ($pageHead->item(0)->childNodes as $node) {
+        $head->item(0)->appendChild($html->importNode($node, TRUE));
+    }
 
-        <!--TESTING-->
-        <script type="text/javascript">
+    $main = $html->getElementsByTagName('main');
+    $mainPage = $page->getElementsByTagName('main');
 
-        </script>
-        <style type="text/css">
-           
-        </style>
-    </head>
-    <body>
-        <header>
-            <h1><a href="">Five Three</a></h1>
-            <nav>
-                <ul>
-                    <li><a href="/news">news</a></li>
-                    <li><a href="/team">team</a></li>
-                    <li><a href="/work">work</a></li>
-                    <li><a href="/products">products</a></li>
-                    <li><a href="/games">games</a></li>
-                    <li><a href="/contact">contact</a></li>
-                </ul>
-            </nav>
-        </header>
-        <footer>
-            <a href="https://www.facebook.com/FiveThreeInc" class="facebook">facebook</a>
-            <a href='https://twitter.com/FiveThreeInc' class="twitter">twitter</a>
-            <a class="google">google plus</a>
-            <span>Copyright &copy; <?php
-                ini_set('date.timezone', 'Europe/London');
-                $thisYear = date('Y');
-                echo $thisYear
-                ?> <br />Team Five 3 <br />All Rights Reserved. </span>
-        </footer>
-    </body>
-</html>
+    foreach ($mainPage->item(0)->childNodes as $node) {
+        $main->item(0)->appendChild($html->importNode($node, TRUE));
+    }
+
+    echo $html->saveHTML();
+} else {
+    require_once "./404/index.php";
+}
+
+?>
