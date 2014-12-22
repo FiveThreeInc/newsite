@@ -1,3 +1,4 @@
 RewriteEngine on
+RewriteRule ^admin/?$ /admin/index.php
 RewriteRule ^([^/.]+)/?$ index.php?req=$1 [L]
 ErrorDocument 404 /404/
