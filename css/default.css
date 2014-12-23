@@ -148,7 +148,7 @@ footer a.google{background-image: url('/img/fivethree.png');background-position:
 footer a:hover{background-color: rgba(255,255,255,0.8);cursor: pointer;}
 footer span{display: block;height: 90px;text-align: center; font-family: 'helvetica-neue', sans-serif; font-size: 10px; letter-spacing: 0px;line-height: 14px; font-weight: 300;padding: 0px 5px;}
 
-/*@media (min-width: 300px) and (min-height:300px){
+@media (min-width: 300px) and (min-height:300px){
     header{
         background:white;
         box-sizing: border-box;
@@ -203,4 +203,4 @@ footer span{display: block;height: 90px;text-align: center; font-family: 'helvet
     header nav ul li a:hover{color:rgb(255,255,255);opacity: 1.0;}
     header nav ul li a.active{color:black;}
 
-}*/
+}
